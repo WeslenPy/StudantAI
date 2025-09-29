@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "plugins": [
+      "expo-router"
+    ],
+    "name": "studantai",
+    "slug": "studantai",
+    "web": {
+      "bundler": "metro"
+    },
+    "android": {
+      "package": "com.weslenpy.studantai"
+    }
+  }
+}
