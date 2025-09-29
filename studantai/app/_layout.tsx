@@ -1,7 +1,6 @@
 import { Stack } from 'expo-router/stack';
 import {useEffect} from "react";
-import "../global.css";
-import { SafeAreaView } from 'react-native-safe-area-context';
+// import "../global.css";
 
 export default function Layout() {
 
@@ -12,13 +11,11 @@ export default function Layout() {
 
  
   return ( 
-  
-    <SafeAreaView>
-        <Stack>
-            <Stack.Screen name="home" options={config} />
-        </Stack>
-    </SafeAreaView>
-        
+
+      <Stack>
+          <Stack.Screen name="home/index" options={config} />
+      </Stack>
+      
 
   );
 }
