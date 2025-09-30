@@ -38,6 +38,13 @@ Antes de começar, você precisa ter instalado:
 - [Expo CLI](https://docs.expo.dev/get-started/installation/)
 - [Expo Go](https://expo.dev/client) no seu smartphone (opcional)
 
+## Video Explicativo
+<p align="center">
+  <a href="https://youtube.com/shorts/PB4WtQFK3ts" target="_blank">
+    <img src="https://youtube.com/shorts/PB4WtQFK3ts/0.jpg" alt="Assista ao vídeo" width="600">
+  </a>
+</p>
+
 ## 🔧 Instalação
 
 1. Clone o repositório:
