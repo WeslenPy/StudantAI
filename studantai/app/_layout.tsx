@@ -1,6 +1,5 @@
 import { Stack } from 'expo-router/stack';
-import {useEffect} from "react";
-// import "../global.css";
+import "../global.css";
 
 export default function Layout() {
 
@@ -11,11 +10,12 @@ export default function Layout() {
 
  
   return ( 
+    <Stack>
+      <Stack.Screen name="home" options={config} />
+      <Stack.Screen name="quiz" options={config} />
+      <Stack.Screen name="finish" options={config} />
+    </Stack>
 
-      <Stack>
-          <Stack.Screen name="home/index" options={config} />
-      </Stack>
-      
 
   );
 }
