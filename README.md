@@ -1,4 +1,4 @@
-# StudentAI 🎓
+# StudantAI 🎓
 
 <p align="center">
   <img src="https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native">
@@ -42,7 +42,7 @@ Antes de começar, você precisa ter instalado:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/WeslenPy/StudentAI.git
+git clone https://github.com/WeslenPy/StudantAI.git
 ```
 
 2. Acesse a pasta do projeto:
