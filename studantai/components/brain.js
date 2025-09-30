@@ -176,7 +176,7 @@ export default function BrainLoading({onClose}) {
         </Animated.View>
       </View>
 
-      <Text style={styles.text}>Gerando suas questões...</Text>
+      <Text style={styles.text}>Gerando questões...</Text>
 
 
       <View style={styles.dotsContainer}>

@@ -2,7 +2,8 @@ import * as FileSystem from "expo-file-system";
 
 import { generateQuestionsFromText } from "./system_message";
 import Constants from "expo-constants";
-
+import { DocumentPickerAsset } from "expo-document-picker";
+import { File } from 'expo-file-system';
 
 const { GEMINI_API_KEY } = Constants.expoConfig?.extra || {};
 
@@ -23,10 +24,14 @@ export default class GeminiClient {
   }
 
   private async request(contents: any[], options: { signal?: AbortSignal } = {}): Promise<GeminiResponse> {
+
     const body = {
       model: "gemini-2.5-flash",
       contents,
     };
+
+
+    console.log(body)
 
     const resp = await fetch(this.baseUrl, {
       method: "POST",
@@ -63,32 +68,34 @@ export default class GeminiClient {
   );
   }
 
-  async sendImage(fileUri: string, prompt: string): Promise<GeminiResponse> {
-    const base64Data = await FileSystem.readAsStringAsync(fileUri, {
-      encoding: FileSystem.EncodingType.Base64,
-    });
+  async sendDocumentWithText(files: Array<DocumentPickerAsset>, 
+                  prompt: string, 
+                  options: { signal?: AbortSignal } = {}): Promise<GeminiResponse> {
+    const document = []
+
+    files.forEach(async file=>{
+      const fileContent = new File(file)
+      const content = fileContent.base64Sync()
+      document.push(
+        {
+          "inline_data": {
+            "mime_type":file.mimeType,
+            "data": content
+          }
+        },
+      )
+    })
 
     return this.request([
-      {
-        mimeType: "image/jpeg", 
-        data: base64Data,
-      },
-      { text: generateQuestionsFromText(prompt) },
-    ]);
+      {parts:
+        [
+          ...document,
+          { text: generateQuestionsFromText(prompt) },
+        ]
+      }],
+    options,
+  );
   }
 
 
-  async sendPDF(fileUri: string, prompt: string): Promise<GeminiResponse> {
-    const base64Data = await FileSystem.readAsStringAsync(fileUri, {
-      encoding: FileSystem.EncodingType.Base64,
-    });
-
-    return this.request([
-      {
-        mimeType: "application/pdf",
-        data: base64Data,
-      },
-      { text: generateQuestionsFromText(prompt) },
-    ]);
-  }
 }

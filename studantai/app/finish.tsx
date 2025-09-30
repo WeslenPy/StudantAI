@@ -92,7 +92,7 @@ export default function QuizResultScreen() {
     }, []);
     
     const handleGoHome = () => {
-       router.navigate("/home")
+       router.navigate("/")
     };
     
     const handleTryAgain = () => {

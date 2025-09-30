@@ -95,7 +95,7 @@ export default function ModernQuizScreen() {
   return (
     <StatusMarging >
       <View style={styles.header}>
-        <TouchableOpacity style={styles.backButton} onPress={()=>router.navigate("/home")}>
+        <TouchableOpacity style={styles.backButton} onPress={()=>router.navigate("/")}>
           <Ionicons name="chevron-back" size={28} color="#1F2937" />
         </TouchableOpacity>
         

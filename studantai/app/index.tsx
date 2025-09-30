@@ -22,8 +22,14 @@ export default function Home(){
     async function onGenerate(){
         try{
             setLoading(true)
+
+            if(!(files || files.length<=0 || !prompt)){
+                return 
+            }
+
             controllerRef.current = new AbortController();
-            let response = await api.sendText(prompt,{
+
+            let response = await api.sendDocumentWithText(files,prompt,{
                 signal: controllerRef.current.signal, 
               })
             const data = JSON.parse(response.text.replace(/^```json\n/, "").replace(/```$/, ""))
