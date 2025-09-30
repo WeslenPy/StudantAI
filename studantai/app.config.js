@@ -2,6 +2,7 @@ import 'dotenv/config';
 
 export default {
   "expo": {
+    "owner": "weslenpy",
     "userInterfaceStyle": "automatic",
     "scheme": "acme",
     "plugins": [
@@ -53,6 +54,10 @@ export default {
     },
     "extra": {
       "GEMINI_API_KEY": process.env.GEMINI_API_KEY,
+      "eas": {
+        "projectId":  process.env.PROJECT_ID
+      }
     },
+    
   }
 }
