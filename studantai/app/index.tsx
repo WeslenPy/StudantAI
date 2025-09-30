@@ -22,6 +22,7 @@ export default function Home(){
     async function onGenerate(){
         try{
             setLoading(true)
+            controllerRef.current?.abort()
 
             if(!(files || files.length<=0 || !prompt)){
                 return 
