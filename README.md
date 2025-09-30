@@ -62,3 +62,6 @@ yarn install
 cp .env.example .env
 ```
 * Edite o arquivo .env com suas credenciais da API de IA.
+
+## Download da ultima release
+- [Baixar APK](https://github.com/WeslenPy/StudantAI/releases/download/release/app-release.apk) (Ultima versão estavel)
