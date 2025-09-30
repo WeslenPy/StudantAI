@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   View,
   Text,
@@ -17,12 +17,12 @@ import { router, useGlobalSearchParams } from 'expo-router';
 
 export default function ModernQuizScreen() {
 
-  const [userAnswers, setUserAnswers] = useState({});
-
   const { data } = useGlobalSearchParams();
-
   const questions = data ? JSON.parse(data as string) : {};
+  
   const totalQuestions = questions.length;
+
+  const [userAnswers, setUserAnswers] = useState({});
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
   const handleFinish = () => {
@@ -84,6 +84,13 @@ export default function ModernQuizScreen() {
 
   const answeredQuestions = Object.keys(userAnswers).length;
   const progressPercentage = (answeredQuestions / totalQuestions) * 100;
+
+
+  useEffect(()=>{
+    setCurrentQuestion(0)
+    setUserAnswers({})
+
+  },[])
 
   return (
     <StatusMarging >

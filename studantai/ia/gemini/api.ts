@@ -45,6 +45,8 @@ export default class GeminiClient {
 
     const json = await resp.json();
 
+    console.log(JSON.stringify(json))
+
     return {
       text:
         json.candidates?.[0]?.content?.parts?.[0]?.text ??
