@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Text, TextInput, View,KeyboardAvoidingView,Platform,TouchableOpacity,FlatList  } from "react-native";
+import { Text, TextInput, View,KeyboardAvoidingView,Platform,TouchableOpacity,FlatList,Image  } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import {  Paperclip, Send } from "lucide-react-native";
 
@@ -88,14 +88,19 @@ export default function Home(){
             >  
             <StatusMarging>
                 <View className="flex-1 overflow-hidden bg-dark">
-                    <Text className="text-black text-base font-medium px-4 mt-3">
-                    StudantAI
-                    </Text>
+                    <View className="flex-row p-2 items-center">
+                        <Image source={require("../assets/icon.png")} width={10} height={10} className="h-10 w-10"></Image>
+                        <Text className="text-black text-base font-bold px-2  tracking-widest font-mono">
+                        StudantAI
+                        </Text>
 
-                    <View className="flex-1 items-center justify-center">
-                    <Text className="text-center text-black">
-                        Gere questões e teste seus conhecimentos!
-                    </Text>
+                    </View>
+
+                    <View className="flex-1 flex-col items-center justify-center">
+                        <Image source={require("../assets/icon.png")} width={50} height={50} className="h-32 w-32 mb-2"></Image>
+                        <Text className="text-center text-black tracking-widest text-2xl">
+                            Gere questões e teste seus conhecimentos!
+                        </Text>
                     </View>
 
                     <LinearGradient

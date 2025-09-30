@@ -11,6 +11,18 @@ export default {
         {
           "iCloudContainerEnvironment": "Production"
         }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#20A7B8",
+          "image": "./assets/splash-icon.png",
+          "dark": {
+            "image": "./assets/splash-icon.png",
+            "backgroundColor": "#20A7B8"
+          },
+          "imageWidth": 100
+        }
       ]
     ],
     "name": "StudantAI",
