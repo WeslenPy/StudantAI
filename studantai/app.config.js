@@ -41,6 +41,7 @@ export default {
       "bundler": "metro"
     },
     "android": {
+      "icon": "./assets/icon.png",
       "package": "com.weslenpy.studantai",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
