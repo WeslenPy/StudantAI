@@ -41,7 +41,7 @@ Antes de começar, você precisa ter instalado:
 ## Video Explicativo
 <p align="center">
   <a href="https://youtube.com/shorts/PB4WtQFK3ts" target="_blank">
-    <img src="https://youtube.com/shorts/PB4WtQFK3ts/0.jpg" alt="Assista ao vídeo" width="600">
+    <img src="https://img.youtube.com/vi/PB4WtQFK3ts/0.jpg" alt="Assista ao vídeo" width="600">
   </a>
 </p>
 
