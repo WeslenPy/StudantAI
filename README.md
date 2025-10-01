@@ -1,4 +1,4 @@
-# StudentAI 🎓
+# StudantAI 🎓
 
 <p align="center">
   <img src="https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native">
@@ -37,6 +37,13 @@ Antes de começar, você precisa ter instalado:
 - [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 - [Expo CLI](https://docs.expo.dev/get-started/installation/)
 - [Expo Go](https://expo.dev/client) no seu smartphone (opcional)
+
+## Video Explicativo
+<p align="center">
+  <a href="https://youtube.com/shorts/PB4WtQFK3ts" target="_blank">
+    <img src="https://img.youtube.com/vi/PB4WtQFK3ts/0.jpg" alt="Assista ao vídeo" width="600">
+  </a>
+</p>
 
 ## 🔧 Instalação
 
