@@ -1,4 +1,9 @@
 import { Stack } from 'expo-router/stack';
+
+import {
+  SafeAreaProvider,
+} from 'react-native-safe-area-context';
+
 import "../global.css";
 
 export default function Layout() {
@@ -9,12 +14,12 @@ export default function Layout() {
 
  
   return ( 
-    <Stack>
-      <Stack.Screen name="index" options={config} />
-      <Stack.Screen name="quiz" options={config} />
-      <Stack.Screen name="finish" options={config} />
-    </Stack>
-
-
+    <SafeAreaProvider>
+      <Stack>
+        <Stack.Screen name="index" options={config} />
+        <Stack.Screen name="quiz" options={config} />
+        <Stack.Screen name="finish" options={config} />
+      </Stack>
+    </SafeAreaProvider>
   );
 }
