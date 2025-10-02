@@ -71,4 +71,4 @@ cp .env.example .env
 * Edite o arquivo .env com suas credenciais da API de IA.
 
 ## Download da ultima release
-- [Baixar APK]([https://github.com/WeslenPy/StudentAI/releases/download/1.2.8/app-release.apk) (Ultima versão estavel)
+- [Baixar APK](https://github.com/WeslenPy/StudentAI/releases/download/1.2.8/app-release.apk) (Ultima versão estavel)
