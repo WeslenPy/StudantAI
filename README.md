@@ -9,7 +9,7 @@
 
 ## 📖 Sobre o Projeto
 
-StudentAI é um aplicativo mobile desenvolvido para ajudar estudantes de diversas áreas a gerar questões personalizadas e testar seus conhecimentos. Utilizando Inteligência Artificial, o app cria exercícios sob medida para facilitar o aprendizado e a fixação de conteúdos.
+StudantAI é um aplicativo mobile desenvolvido para ajudar estudantes de diversas áreas a gerar questões personalizadas e testar seus conhecimentos. Utilizando Inteligência Artificial, o app cria exercícios sob medida para facilitar o aprendizado e a fixação de conteúdos.
 
 ## ✨ Funcionalidades
 
@@ -71,4 +71,4 @@ cp .env.example .env
 * Edite o arquivo .env com suas credenciais da API de IA.
 
 ## Download da ultima release
-- [Baixar APK](https://github.com/WeslenPy/StudantAI/releases/download/release/app-release.apk) (Ultima versão estavel)
+- [Baixar APK]([https://github.com/WeslenPy/StudentAI/releases/download/1.2.8/app-release.apk) (Ultima versão estavel)
